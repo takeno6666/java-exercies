@@ -1,6 +1,6 @@
 import java.util.Scanner;
-public class Exercisexx{
-  public static void main(String[]abc){
+public class Exercisexx {
+  public static void main(String[]abc) {
     int row,column;
 
     Scanner in = new Scanner(System.in);
