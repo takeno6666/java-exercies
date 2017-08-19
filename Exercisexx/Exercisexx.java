@@ -6,8 +6,8 @@ public class Exercisexx {
     Scanner in = new Scanner(System.in);
     System.out.print("input a =");
     int a =in.nextInt();
-    while(a<10){
-      System.out.print("a should be bigger than 10"+"\n");
+    while(a<9){
+      System.out.print("a should be bigger than 9"+"\n");
       System.out.print("input a =");
       a =in.nextInt();
     }
