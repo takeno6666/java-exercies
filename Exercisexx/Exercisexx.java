@@ -18,54 +18,55 @@ public class Exercisexx {
       System.out.print("input position :");
       position = in.nextInt();
     }
-    if(position==1){
-      for(row=0;row<=a;row++){
-        for(column=0;column<=a;column++){
-          if(column<=row){
-            System.out.print("*");
-          }else{
-            System.out.print(" ");
+    switch(position) {
+      case 1:
+          for(row=0;row<=a;row++){
+            for(column=0;column<=a;column++){
+              if(column<=row){
+                System.out.print("*");
+              }else{
+                System.out.print(" ");
+              }
+            }
+            System.out.print("\n");
           }
-        }
-        System.out.print("\n");
-        }
-      }
-    if(position==2){
-      for(row=0;row<=a;row++){
-        for(column=0;column<=a;column++){
-          if(column>=row){
-            System.out.print("*");
-          }else{
-            System.out.print(" ");
+        break;
+        case 2:
+          for(row=0;row<=a;row++){
+            for(column=0;column<=a;column++){
+              if(column>=row){
+                System.out.print("*");
+              }else{
+                System.out.print(" ");
+              }
           }
+          System.out.print("\n");
         }
-        System.out.print("\n");
-
-    }
-  }
-  if(position==3){
-      for(row=a-1;row>=0;row--){
-        for(column=0;column<=a;column++){
-          if(column<=row){
-            System.out.print("*");
-          }else{
-            System.out.print(" ");
+          break;
+        case 3:
+        for(row=a-1;row>=0;row--){
+          for(column=0;column<=a;column++){
+            if(column<=row){
+              System.out.print("*");
+            }else{
+              System.out.print(" ");
+            }
           }
-        }
-        System.out.print("\n");
-}
-}
-if(position==4){
-      for(row=a-1;row>=0;row--){
-        for(column=0;column<=a;column++){
-          if(column>=row){
-            System.out.print("*");
-          }else{
-            System.out.print(" ");
+          System.out.print("\n");
           }
-        }
-        System.out.print("\n");
-      }
+          break;
+          case 4:
+          for(row=a-1;row>=0;row--){
+            for(column=0;column<=a;column++){
+              if(column>=row){
+                System.out.print("*");
+              }else{
+                System.out.print(" ");
+              }
+            }
+            System.out.print("\n");
+          }
+          break;
     }
   }
 }
